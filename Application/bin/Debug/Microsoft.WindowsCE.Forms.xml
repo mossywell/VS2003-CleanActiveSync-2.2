@@ -1,0 +1,167 @@
+<?xml version="1.0"?>
+<doc>
+  <assembly>
+    <name>Microsoft.WindowsCE.Forms</name>
+  </assembly>
+  <members>
+    <member name="T:Microsoft.WindowsCE.Forms.InputPanel">
+      <summary>
+        <para>Controls the Software Input Panel (SIP) on the Pocket PC.</para>
+      </summary>
+    </member>
+    <member name="M:Microsoft.WindowsCE.Forms.InputPanel.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:Microsoft.WindowsCE.Forms.InputPanel" /> class for displaying the Software 
+   Input Panel (SIP) on a Pocket PC.</para>
+      </summary>
+    </member>
+    <member name="E:Microsoft.WindowsCE.Forms.InputPanel.EnabledChanged">
+      <summary>
+        <para>Occurs when the Software Input Panel (SIP) on a Pocket PC 
+      is hidden or displayed.</para>
+      </summary>
+    </member>
+    <member name="P:Microsoft.WindowsCE.Forms.InputPanel.Enabled">
+      <summary>
+        <para>Shows or hides the Software Input Panel (SIP) on a Pocket PC.</para>
+      </summary>
+    </member>
+    <member name="P:Microsoft.WindowsCE.Forms.InputPanel.VisibleDesktop">
+      <summary>
+        <para>Returns a <see cref="T:System.Drawing.Rectangle" /> representing the area 
+   not obscured by the Software Input Panel (SIP) on a Pocket PC.</para>
+      </summary>
+    </member>
+    <member name="P:Microsoft.WindowsCE.Forms.InputPanel.Bounds">
+      <summary>
+        <para>Returns a <see cref="T:System.Drawing.Rectangle" /> that represents the size and 
+   location of the Software Input Panel (SIP) on a Pocket PC.</para>
+      </summary>
+    </member>
+    <member name="T:Microsoft.WindowsCE.Forms.Message">
+      <summary>
+        <para>Implements a Windows message.</para>
+      </summary>
+    </member>
+    <member name="M:Microsoft.WindowsCE.Forms.Message.Create(System.IntPtr,System.Int32,System.IntPtr,System.IntPtr)">
+      <summary>
+        <para>Creates a new <see cref="T:Microsoft.WindowsCE.Forms.Message" /> structure.</para>
+      </summary>
+      <param name="hwnd">The window handle that the message is for.</param>
+      <param name=" msg">The message ID.</param>
+      <param name=" wparam">The message <see langword="WParam" /> field.</param>
+      <param name=" lparam">The message <see langword="LParam" /> field.</param>
+      <returns>
+        <para>A <see cref="T:Microsoft.WindowsCE.Forms.Message" /> structure that represents the message 
+   that was created.</para>
+      </returns>
+    </member>
+    <member name="M:Microsoft.WindowsCE.Forms.Message.op_Equality(Microsoft.WindowsCE.Forms.Message,Microsoft.WindowsCE.Forms.Message)">
+      <summary>
+        <para>Compares two <see cref="T:Microsoft.WindowsCE.Forms.Message" /> structures to
+   determine whether they are equal.</para>
+      </summary>
+      <param name="left">The <see cref="T:Microsoft.WindowsCE.Forms.Message" /> on the left side of the operator.</param>
+      <param name=" right">The <see cref="T:Microsoft.WindowsCE.Forms.Message" /> on the right side of the operator.</param>
+      <returns>
+        <para>
+          <see langword="true" /> if both <see cref="T:Microsoft.WindowsCE.Forms.Message" /> structures are equal; otherwise,
+<see langword="false" /> .</para>
+      </returns>
+    </member>
+    <member name="M:Microsoft.WindowsCE.Forms.Message.op_Inequality(Microsoft.WindowsCE.Forms.Message,Microsoft.WindowsCE.Forms.Message)">
+      <summary>
+        <para>Compares two <see cref="T:Microsoft.WindowsCE.Forms.Message" />structures to determine whether they are not equal.</para>
+      </summary>
+      <param name="left">The <see cref="T:Microsoft.WindowsCE.Forms.Message" /> on the left side of the operator.</param>
+      <param name=" right">The <see cref="T:Microsoft.WindowsCE.Forms.Message" /> on the right side of the operator.</param>
+      <returns>
+        <para>
+          <see langword="true" /> if the <see cref="T:Microsoft.WindowsCE.Forms.Message" /> structures are equal; otherwise, 
+<see langword="false" /> .</para>
+      </returns>
+    </member>
+    <member name="M:Microsoft.WindowsCE.Forms.Message.Equals(System.Object)">
+      <summary>
+        <para>[To be supplied.]</para>
+      </summary>
+    </member>
+    <member name="M:Microsoft.WindowsCE.Forms.Message.GetHashCode">
+      <summary>
+        <para>[To be supplied.]</para>
+      </summary>
+    </member>
+    <member name="P:Microsoft.WindowsCE.Forms.Message.HWnd">
+      <summary>
+        <para>Gets or sets the window handle of the message.</para>
+      </summary>
+    </member>
+    <member name="P:Microsoft.WindowsCE.Forms.Message.Msg">
+      <summary>
+        <para>Gets or sets the ID number for the message.</para>
+      </summary>
+    </member>
+    <member name="P:Microsoft.WindowsCE.Forms.Message.WParam">
+      <summary>
+        <para>Gets or sets the <see langword="WParam" /> field of the Message.</para>
+      </summary>
+    </member>
+    <member name="P:Microsoft.WindowsCE.Forms.Message.LParam">
+      <summary>
+        <para>Gets or sets the <see langword="LParam" /> field of the message.</para>
+      </summary>
+    </member>
+    <member name="P:Microsoft.WindowsCE.Forms.Message.Result">
+      <summary>
+        <para>Specifies the value that is returned to Windows in 
+      response to handling the message.</para>
+      </summary>
+    </member>
+    <member name="T:Microsoft.WindowsCE.Forms.MessageWindow">
+      <summary>
+        <para>Supports communication between native Windows applications
+      and managed applications by using Windows message constructs.</para>
+      </summary>
+    </member>
+    <member name="M:Microsoft.WindowsCE.Forms.MessageWindow.SendMessage(Microsoft.WindowsCE.Forms.Message@)">
+      <summary>
+        <para>Sends the specified message to a native window and waits 
+      until the window procedure has processed the message.</para>
+      </summary>
+      <param name="m">A Windows message.</param>
+    </member>
+    <member name="M:Microsoft.WindowsCE.Forms.MessageWindow.PostMessage(Microsoft.WindowsCE.Forms.Message@)">
+      <summary>
+   Sends the specified message to a native window and
+   returns immediately.
+</summary>
+      <param name="m">A Windows message.</param>
+    </member>
+    <member name="M:Microsoft.WindowsCE.Forms.MessageWindow.#ctor">
+      <summary>
+        <para>Instantiates a new instance of the <see cref="T:Microsoft.WindowsCE.Forms.MessageWindow" /> class.</para>
+      </summary>
+    </member>
+    <member name="M:Microsoft.WindowsCE.Forms.MessageWindow.Finalize">
+      <summary>
+        <para>[To be supplied.]</para>
+      </summary>
+    </member>
+    <member name="M:Microsoft.WindowsCE.Forms.MessageWindow.Dispose">
+      <summary>
+        <para>Closes the message window.</para>
+      </summary>
+    </member>
+    <member name="M:Microsoft.WindowsCE.Forms.MessageWindow.WndProc(Microsoft.WindowsCE.Forms.Message@)">
+      <summary>
+        <para>Processes Windows messages.</para>
+      </summary>
+      <param name="m">A Windows message.</param>
+    </member>
+    <member name="P:Microsoft.WindowsCE.Forms.MessageWindow.Hwnd">
+      <summary>
+        <para>Gets the handle of the Windows message.</para>
+      </summary>
+    </member>
+  </members>
+</doc>

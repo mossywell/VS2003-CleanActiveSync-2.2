@@ -1,0 +1,35 @@
+[Version]
+Signature="$Windows NT$"      ; Required as-is
+Provider="Mossywell"          ; Company name
+CESignature="$Windows CE$"    ; Required as-is
+
+[CEStrings]
+AppName="Clean ActiveSync"             ; Max of 40 chars, no XML reserved chars
+InstallDir=%CE1%\Mossywell\%AppName%   ; Installation directory on device
+
+[CEDevice]
+VersionMin=4.00               ; Required as-is
+VersionMax=4.99               ; Required as-is
+
+[DefaultInstall]              ; Operations to complete during install
+CEShortcuts=Shortcuts         ; Create a shortcut - aliased below
+CopyFiles=Files.Common        ; Files to install to device - aliased below
+
+[SourceDisksNames]            ; Directory on PC that holds source data
+1=,"Common1",,"..\Application\bin\Release\"
+
+[SourceDisksFiles]            ; Listing of all files to be included in CAB
+CleanActiveSync.exe=1
+OpenNETCF.dll=1
+
+[DestinationDirs]             ; Default directory destination for each entry
+Files.Common=0,%InstallDir%
+Shortcuts=0,%CE2%\Start Menu
+
+[Files.Common]                ; List of files to install to device
+CleanActiveSync.exe,,,0
+OpenNETCF.dll,,,0
+
+[Shortcuts]                   ; Shortcut created in destination directory on device
+Clean ActiveSync,0,CleanActiveSync.exe,%CE17%
+

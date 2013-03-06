@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{20D4826A-C6FA-45DB-90F4-C717570B9F32}") = "CleanActiveSync", "Application\CleanActiveSync.csdproj", "{5ECBBD4A-88CD-4540-B7A9-09C251B2FC40}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{5ECBBD4A-88CD-4540-B7A9-09C251B2FC40}.Debug.ActiveCfg = Debug|Smartphone
+		{5ECBBD4A-88CD-4540-B7A9-09C251B2FC40}.Debug.Build.0 = Debug|Smartphone
+		{5ECBBD4A-88CD-4540-B7A9-09C251B2FC40}.Debug.Deploy.0 = Debug|Smartphone
+		{5ECBBD4A-88CD-4540-B7A9-09C251B2FC40}.Release.ActiveCfg = Release|Smartphone
+		{5ECBBD4A-88CD-4540-B7A9-09C251B2FC40}.Release.Build.0 = Release|Smartphone
+		{5ECBBD4A-88CD-4540-B7A9-09C251B2FC40}.Release.Deploy.0 = Release|Smartphone
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
